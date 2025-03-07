@@ -39,21 +39,21 @@ This will start the necessary Hadoop services in the background.
 
 ## How to Run
 
-1. **Compile the Java Program**:
-
-   ```sh
-   javac -cp $(hadoop classpath) -d . HDFSOperations.java
-   ```
-
 2. **Create a JAR File**:
 
    ```sh
    jar -cvf HDFSOperations.jar org/example/tpHDFS/HDFSOperations.class
    ```
-
-3. **Run the Application**:
+   OR
+   
    ```sh
-   hadoop jar HDFSOperations.jar org.example.tpHDFS.HDFSOperations
+   using maven in intelliJ to generate jar file
+   ```
+   
+
+4. **Run the Application**:
+   ```sh
+   java -jar HDFSOperations.jar 
    ```
 
 ## Testing
